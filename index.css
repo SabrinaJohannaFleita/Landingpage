@@ -1,4 +1,3 @@
-
 body {
     background-color: black;
     font-family: 'Noto Sans', sans-serif;
@@ -8,15 +7,17 @@ nav {
     width: 40%;
 }
 .navegacion {
-    width: 100%;
+    width: 90%;
     padding: 0;
     margin: 0;
     list-style: none;
-display: flex;
-justify-content: space-around;
-align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-a {
+#inicio, #sobremi, #client, #contac {
     color: black;
     font-size: 1.1em;
     text-decoration: none;
@@ -26,20 +27,34 @@ a {
     padding: 4px;
     border-radius: 15px;
 }
+#inicio:hover, #sobremi:hover, #client:hover, #contac:hover {
+   color: white;
+   font-size: 1.3em;
+}
 header {
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+    
 .section {
-    display: flex;
    margin-top: 120px;
+   font-size: 1.1em;
    margin-left: auto;
    margin-right: auto;
-   font-size: 1.1em;
    width: 90%;
    background-color: black;
+}
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-yo {
+    margin-top: 40px;
+    width: 250px;
+    height: 300px;
+    padding: 10px;
 }
 .sec-test {
     margin-top: 20px;
@@ -51,10 +66,7 @@ header {
 }
 .testing {
     padding-top: 30px;
-    
-  
-}
-   
+} 
 .image {
     margin-top: 10px;
     width: 200px;
@@ -67,9 +79,12 @@ h1 {
 button {
     width: 10%;
     height: 10%;
-
 }
-
+button:hover {
+    background-color: fuchsia;
+    width: 15%;
+    height: 12%;
+}
 .box {
     margin-top: 50px;
     display: flex;
@@ -91,8 +106,105 @@ button {
     justify-content: space-around;
 }
  i {
-    color: fuchsia;
- }
+    color: fuchsia
+}
  i:hover {
     color: blue;
+ }
+ .clients {
+    margin-top: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1em;
+ }
+ .fotoclientes {
+    display: flex;
+    justify-content: space-evenly;
+ }
+ #salem {
+    width: 280px;
+    height: 270px;
+    border-radius: 30px;
+ }
+ #wilper {
+    width: 250px;
+    height: 270px;
+    border-radius: 30px;
+ }
+ .div-imagen {
+        display:block;
+        position:relative;
+      }
+      
+ .div-imagen > div  {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        padding:10px;
+        margin:0;
+      }
+      
+ .wilp:hover {
+        opacity: 0.07;
+        transition: opacity 500ms;
+      }
+ 
+ .nomelacontainer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+ }
+ .contact {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .info {
+   width: 300px;
+   height: 200px;
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .img-footer {
+    margin-top: 50px;
+   display: flex;
+   justify-content: center;
+ }
+ .imgfo {
+    width: 100px;
+    height: 100px;
+ }
+ .imgfo:hover {
+    width: 150px;
+    height: 150px;
+ }
+ @media screen and (max-width: 980px) {
+    .navegacion {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    }
+    a {
+        border-radius: ;0px;
+        background: none;
+    }
+    button {
+        width: 18%;
+        height: 12%;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sec-ventajas {
+        width: 100%;
+    }
  }
